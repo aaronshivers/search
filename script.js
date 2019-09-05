@@ -3,7 +3,7 @@ const paragraphs = document.querySelectorAll('p')
 
 input.addEventListener('input', e => {
   const searchTerm = e.target.value
-  const regex = new RegExp(searchTerm, 'g')
+  const regex = new RegExp(searchTerm, 'ig')
   const replacement = `<span class="highlighted">${ searchTerm }</span>`
 
   for (const p of paragraphs) {
